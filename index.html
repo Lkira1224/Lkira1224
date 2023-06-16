@@ -8,15 +8,41 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <!--Font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="strands.css">
+    <link rel="stylesheet" href="strands1.css">
   <link rel="stylesheet" href="style.css">
-   <title>League of Legends</title>
+   <title>Group 5 website</title>
+   <style>
+    body{
+      background-image: url("http://pcaat.edu.ph/assets/images/picture1-1108x854.png");
+    }
+    .pcaatlogo img {
+   width: 150px;
+   margin-left: 185px;
+   margin-top: 20px;
+   margin-bottom: -130px;
+}
+.header h1{
+   text-align: center;
+   margin-right: 105px;
+   margin-left: 105px;
+   font-size: 25px;
+   font-weight: bold;
+   color: blue;
+   background-color: antiquewhite;
+ }
+   </style>
 </head>
 <body>
 
   <!--Navbar start-->
-  <nav class="navbar navbar-expand-lg navbar-secondary fixed-top bg-secondary">
+  <nav class="navbar navbar-expand-lg navbar-white fixed-top bg-white">
     <div class="container-fluid">
-      <img src="http://pcaat.edu.ph/assets/images/pcaat-logo-121x121.png" alt="..." height="90">
+      <img src="images/logo.png" alt="..." height="90">
       <h1>Philippine College of Advanced Arts and Technology</h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggler navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,20 +52,8 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
-           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Programs Offered
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Humanities and Social Sciences</a></li>
-              <li><a class="dropdown-item" href="#">Accountancy, Business, and Management</a></li>
-              <li><a class="dropdown-item" href="#">General Academic</a></li><br>
-              <li><a class="dropdown-item" href="#">Tech-Voc ICT</a></li>
-              <li><a class="dropdown-item" href="#">Tech-Voc Bartending</a></li>
-            </ul>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="Teams.html">News and updates</a>
+            <a class="nav-link" href="strands.html">Strands</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
@@ -61,22 +75,22 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="http://pcaat.edu.ph/assets/images/picture4-1500x1029.png" class="d-block w-100" alt="...">
+      <img src="images/image1.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="http://pcaat.edu.ph/assets/images/picture5-1488x877.png" class="d-block w-100" alt="...">
+      <img src="images/image2.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="http://pcaat.edu.ph/assets/images/picture3-1500x884.png" class="d-block w-100" alt="...">
+      <img src="images/image3.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="http://pcaat.edu.ph/assets/images/picture2-1500x1125.png" class="d-block w-100" alt="...">
+      <img src="images/image4.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="http://pcaat.edu.ph/assets/images/picture1-1500x1125.png" class="d-block w-100" alt="...">
+      <img src="images/image5.png" class="d-block w-100" alt="...">
     </div>
       <div class="carousel-item">
-        <img src="http://pcaat.edu.ph/assets/images/img-1508-1500x2000.jpeg" class="d-block w-100" alt="...">
+        <img src="images/image6.jpeg" class="d-block w-100" alt="...">
       </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -90,7 +104,7 @@
 </div>
 <!--Carousel end--><hr>
 <div class="container">
-  <h3>What is PCAAT?</h3>
+  <h3><i>What is PCAAT?</i></h3>
   <p>Philippine College of Advanced Arts and Technology (PCAAT) is a new school established during the pandemic. It aims to meet the educational needs of young people despite the difficulties in the challenging education system. PCAAT offers different Senior High School Strands namely Humanities and Social Sciences Strand, Accountancy, Business, and Management Strand, General Academic Strand, Technical-Vocational-Livelihood ICT and Bartending. </p>
 </div><hr>
 <!--Card start-->
@@ -153,61 +167,219 @@
   <!--Featured start-->
   <div class="my-container">
     <div class="thumbnail right">
-      <img src="http://pcaat.edu.ph/assets/images/170277673-289813715947657-5264856169152851954-n-696x522.jpg" alt="">
+      <img src="images/lgbt.png" alt="">
     </div>
-    <h1>Esports</h1>
+    <h1>Colors of Equality</h1>
     <p>
-        Esports, short for electronic sports, refers to competitive video gaming where professional players and teams compete against each other in various video games. It has rapidly grown into a global phenomenon, with millions of fans and participants worldwide. Esports tournaments are often organized in arenas or streamed online, attracting massive viewership. Professional esports players are highly skilled and dedicated, practicing for hours to hone their abilities. They compete in popular games such as League of Legends, Counter-Strike: Global Offensive, Dota 2, and Overwatch, among others. The esports industry has evolved to include sponsorships, lucrative prize pools, and professional leagues, mirroring traditional sports. It has become a major entertainment sector, capturing the attention of both gaming enthusiasts and mainstream audiences.
+      At the Philippine College of Advanced Arts and Technology, we pride ourselves on fostering a safe, inclusive, and affirming environment for all students, including those from the LGBTQ+ community. We celebrate diversity and embrace individuals of all sexual orientations and gender identities. Our campus is a space where everyone can express themselves freely, without fear of discrimination or prejudice. We provide support networks, LGBTQ+-focused initiatives, and resources to ensure that every student feels respected and valued. Join us at PCAAT, where you can fully embrace your authentic self while pursuing your artistic passions.
     </p>
-<br><hr>
+<hr>
     <div class="thumbnail left">
-      <img src="http://pcaat.edu.ph/assets/images/163170568-252295589933481-3446361675943019158-n-696x522.jpg" alt="">
+      <img src="images/financial literacy.png" alt="">
     </div>
-    <h2>League of Legends</h2>
+    <h2>Youth Entrepreneur Club (ABM)</h2>
     <p>
-        League of Legends (LoL) is a highly popular multiplayer online battle arena (MOBA) video game developed by Riot Games. In LoL, players assume the role of champions and compete in teams to destroy the enemy's base while defending their own. The game features a vast roster of unique champions, each with their own abilities and playstyles. Matches take place on diverse maps with strategic elements, and players must coordinate their actions, use tactics, and make quick decisions to outplay their opponents. With its competitive nature, complex gameplay mechanics, and regular updates, League of Legends has established itself as one of the leading esports titles, captivating a massive player base and attracting professional teams and tournaments globally.
+      PCAAT recently organized a highly informative webinar on financial literacy, reflecting our commitment to empowering students with essential life skills. Recognizing the importance of financial knowledge in today's complex world, we hosted industry experts who shared valuable insights and practical tips on budgeting, investments, and financial planning. By raising awareness about financial literacy, PCAAT aims to equip our students with the tools necessary to make informed financial decisions, build a secure future, and achieve their artistic aspirations with financial confidence. Join us in our mission to promote financial literacy and unlock a world of possibilities at PCAAT.
     </p>
-<br><hr>
+<hr>
     <div class="thumbnail right">
-        <img src="http://pcaat.edu.ph/assets/images/163949200-137717384946018-7342534267656428087-n-696x522.jpg" alt="">
+        <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t39.30808-6/286671176_128205443216551_7920032560919829231_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGXH2rSlM95ceUh0MJ7sOe_Uv9XuG-IN-FS_1e4b4g34bT2jXmS5a6iihGhG4inJq5EoVvn2FLHFv9NZVgIuAk_&_nc_ohc=N7XYSoGKwS8AX_5hjyQ&_nc_ht=scontent.fmnl3-2.fna&oh=00_AfC3aC1Z3FkHDxZ3taiQIFyTyfSqSAJCuRK3hYkj0wG1-w&oe=6490CC6D" alt="">
       </div>
-      <h3>History</h3>
+      <h3>Our Purpose</h3>
       <p>
         The history of League of Legends esports began with the game's launch in 2009 by Riot Games. It started with grassroots tournaments and community-driven events, but as the game's popularity grew, Riot Games established a more structured competitive framework. The first official League of Legends World Championship, known as the Season 1 Championship, took place in 2010, marking a significant milestone for the game. Over the years, the competitive scene expanded with the introduction of regional leagues like LCS and LEC, and the annual World Championship became a global spectacle. Riot Games also implemented franchising models and introduced events like the Mid-Season Invitational. League of Legends esports has experienced tremendous growth, becoming one of the most prominent and popular esports titles globally.
       </p>
-<br><hr>
+<hr>
       <div class="thumbnail left">
-        <img src="http://pcaat.edu.ph/assets/images/171487325-824134984873520-6014975624572565721-n-696x522.jpg" alt="">
+        <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t39.30808-6/286326880_128205423216553_3398171822889645799_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFQOIQ90ELQAxo19ClCIzVjpHjR2AbwnbakeNHYBvCdthBVuzntGBZfMI156AN1VYXedbnlBG999vvxOnUvMBZj&_nc_ohc=Q7GLvJUSPgEAX_Kc-Qp&_nc_ht=scontent.fmnl3-2.fna&oh=00_AfDTHCyfOfHa_svB7GoP3AbwoTgkXp3UDDIiCYnMOHr3KQ&oe=648FF913" alt="">
       </div>
-      <h4>Relevance</h4>
-      <p>
-        Esports has gained immense relevance in recent years due to its widespread popularity and cultural impact. It has emerged as a major entertainment industry, captivating millions of viewers worldwide. Esports offers a unique blend of competition, skill, and entertainment, attracting both passionate gaming enthusiasts and mainstream audiences. With its engaging gameplay, compelling narratives, and high-stakes tournaments, esports has become a source of entertainment that rivals traditional sports and other forms of media. It has created a new avenue for careers and opportunities, with professional players, teams, casters, and content creators finding success and recognition within the esports ecosystem. Additionally, esports has transcended geographical boundaries, connecting people globally through a shared passion for gaming and competition. Its relevance extends beyond entertainment, with educational institutions recognizing the potential of esports in areas like teamwork, strategy, and critical thinking. As technology continues to advance and esports continues to evolve, its relevance is likely to grow, shaping the future of entertainment and competition.
-      </p>
-      <br><hr>
-    <div class="thumbnail right">
-        <img src="http://pcaat.edu.ph/assets/images/img-1207-1139x854.jpg" alt="">
-      </div>
-      <h3>History</h3>
-      <p>
-        The history of League of Legends esports began with the game's launch in 2009 by Riot Games. It started with grassroots tournaments and community-driven events, but as the game's popularity grew, Riot Games established a more structured competitive framework. The first official League of Legends World Championship, known as the Season 1 Championship, took place in 2010, marking a significant milestone for the game. Over the years, the competitive scene expanded with the introduction of regional leagues like LCS and LEC, and the annual World Championship became a global spectacle. Riot Games also implemented franchising models and introduced events like the Mid-Season Invitational. League of Legends esports has experienced tremendous growth, becoming one of the most prominent and popular esports titles globally.
-      </p>
-      <br><hr>
-      <div class="thumbnail left">
-        <img src="http://pcaat.edu.ph/assets/images/163069202-492815888745839-1844229195994315409-n-2048x1536.jpg" alt="">
-      </div>
-      <h4>Relevance</h4>
+      <h4>Our Commitment</h4>
       <p>
         Esports has gained immense relevance in recent years due to its widespread popularity and cultural impact. It has emerged as a major entertainment industry, captivating millions of viewers worldwide. Esports offers a unique blend of competition, skill, and entertainment, attracting both passionate gaming enthusiasts and mainstream audiences. With its engaging gameplay, compelling narratives, and high-stakes tournaments, esports has become a source of entertainment that rivals traditional sports and other forms of media. It has created a new avenue for careers and opportunities, with professional players, teams, casters, and content creators finding success and recognition within the esports ecosystem. Additionally, esports has transcended geographical boundaries, connecting people globally through a shared passion for gaming and competition. Its relevance extends beyond entertainment, with educational institutions recognizing the potential of esports in areas like teamwork, strategy, and critical thinking. As technology continues to advance and esports continues to evolve, its relevance is likely to grow, shaping the future of entertainment and competition.
       </p>
   </div>
   <!--Featured end-->
+<br>
+<div class="breakline">
+  <h1></h1>
+</div>
+<br>
+<h5>Strands</h5><hr>
+<!--Strands Start-->
+<div class="main-container">
+  <header>
+   
+  </header>
+  <div class="hero">
+  </div>
+  <main>
+    <div class="container-text-heading">
+      <h1>
+        <span class="text-heading-highlight">STRANDS</span> PCAAT
+      </h1>
+    </div>
+    <div class="container-text-content">
+      <p> 
+        These are the strands offered in Philippine College of Advanced Arts and Technology
+      </p>
+</div>
+  </main>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="card col-md-12 p-3">
+      <div class="row ">
+        <div class="col-md-4">
+          <img class="w-100" src="http://pcaat.edu.ph/assets/images/163170568-252295589933481-3446361675943019158-n-696x522.jpg">
+        </div>
+        <div class="col-md-8">
+          <div class="card-block">
+            <h6 class="card-title">Humanities and Social Sciences</h6>
+            <p class="card-text text-justify">HUMSS designed for those who admire what is on beyond of the wall. In other words, learners are ready to explore on the world and talk to a lot of things and people. This is for those who are considering taking up journalism, communication arts, liberal arts, education, and other social science-related course. </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card col-md-12 p-3">
+      <div class="row ">
+        <div class="col-md-8">
+          <div class="card-block">
+            <h6 class="card-title text-right">General Academics</h6>
+            <p class="card-text text-justify">GA is suited for students who are still undecided on which track to take. There are elective subjects from the different academic strands under this track that can be an option. These subjects include Humanities, Social Sciences, Applied Economics, Organization and Management, and Disaster Preparedness.</p>
+            
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img class="w-100" src="http://pcaat.edu.ph/assets/images/170277673-289813715947657-5264856169152851954-n-696x522.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="card col-md-12 p-3">
+      <div class="row ">
+        <div class="col-md-4">
+          <img class="w-100" src="http://pcaat.edu.ph/assets/images/163069202-492815888745839-1844229195994315409-n-2048x1536.jpg">
+        </div>
+        <div class="col-md-8">
+          <div class="card-block">
+            <h6 class="card-title">Accountancy, Business, and Management</h6>
+            <p class="card-text text-justify">ABM center on the basic concepts of financial management, business management, corporate operations, and all things that are accounted for. Learners are guided to careers on management and accounting which could be sales manager, human resources, marketing director, project officer, book keeper, accounting clerk, internal auditor, and a lot more.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card col-md-12 p-3">
+      <div class="row ">
+        <div class="col-md-8">
+          <div class="card-block">
+            <h6 class="card-title text-right">Tech-Voc ICT</h6>
+            <p class="card-text text-justify">Information and Communication Technology – (Programming – Java and .NET) a specialization course that leads to a Programming that discusses six (6) basic competencies, two (2) common competencies, and two (2) core competencies that a Grade 11 Technical-Vocational Education (TVE) student ought to possess. In this area, learners can lead workplace communication, lead small team, develop and practice negotiation skills, solve problems related to work activities, use mathematical concepts and techniques and use relevant technologies.</p>
+        </div>
+          </div>
+          <div class="col-md-4">
+          <img class="w-100" src="http://pcaat.edu.ph/assets/images/img-1207-1139x854.jpg">
+                  
+                  
+        </div>
+      </div>
+    </div>
+      <div class="card col-md-12 p-3">
+          <div class="row ">
+              <div class="col-md-4">
+                  <img class="w-100" src="http://pcaat.edu.ph/assets/images/170277673-289813715947657-5264856169152851954-n-696x522.jpg">
+              </div>
+              <div class="col-md-8">
+                  <div class="card-block">
+                      <h6 class="card-title">Tech-Voc Bartending</h6>
+                      <p class="card-text text-justify">Home Economics – Bartending and Food & Beverages is designed for students to develop their knowledge, skills and attitude required in effective bar and beverage services. It reflects the role of a bartender and/or a utility/back and may be part of the role of a bar attendant. It covers four core competencies namely:
+                          1) cleaning bar areas
+                          2) operating bar
+                          3) preparing and mixing cocktails and non-alcoholic
+                              concoctions, and
+                         4) providing basic wine services.</p>
+                      
+                  </div>
+              </div>
+  </div>
 
-<!--Team Pages Start-->
-<!--Team Pages End-->
+      </div>
+  </div>
+</div>
+<!--Strands End-->
+<hr>
+<!--About start-->
+<h5><i>President's Message</i></h5><hr>
+    <div class="container">
+        <img src="http://pcaat.edu.ph/assets/images/img-3155-720x960.jpeg" alt="">
+        <div>
+        <div class="datu">
+          <h1><i>CHIARA REINA L. DATU</i></h1><hr>
+        </div>
+        <p>Isang mainit at maligayang pagbati mula sa Philippine College of Advanced Arts and Technology o PCAAT. Ako si Chiara Reina L. Datu, Presidente ng PCAAT. Ikinagagalak kong ipakilala sa inyo ang PCAAT. Ang PCAAT ay isang bagong paaralan na itinayo sa panahon ng pandemya. Layunin nitong makamit ang mga pangangailangang pang-edukasyon ng mga kabataan sa kabila ng paghihirap sa mapanghamong sistema ng pag-aaraal. Ang pilosopiya namin ay nakaugat sa pagpapahalaga sa edukasyon bilang isang instrumento sa pagpapaunlad sa sarili laban sa mga kahirapan na nararanasan. Kahit masasabing bata pa ang aming paaralan, malaki ang aming puso at walang hanggan ang aming mga pangarap. Ito ang makikita sa aming tunguhin kung saan ang layunin ay sumulong bilang isang paaralan na naghahandog ng kalidad na edukasyon tungo sa paghubog sa mag-aaral bilang isang propesyunal na nagpupunyagi hindi lamang para sa pag-angat ng sariling buhay maging para sa pag-unlad ng bayan. Ito ang simula ng mas mabuting kinabukasan para sa aming
+          mga mag-aaral. <br><br><i>Together, we will rise from adversity and soar towards excellence!</i></p>
+        </div>
+      </div>
+    </div>
+  <hr>
+  <!--Featured start-->
+  <div class="header">
+    <h1>PCAAT’s Vision and Mission consequently reflect this philosophy in its aim to provide quality education geared towards preparing students to function effectively in a diverse society within global community.</h1>
+  </div>
+  <div class="container">
+    <div class="thumbnail right">
+      <img src="http://pcaat.edu.ph/assets/images/171487325-824134984873520-6014975624572565721-n-886x665.jpeg" alt="">
+    </div>
+    <h1>VISION</h1>
+    <p>
+      PCAAT envisions to grow into a renowned educational institution that provides innovative and advanced program in arts, science and technology with the aim of developing compassionate lifelong learners and professionals working towards nation building.
+    </p>
+<hr>
+    <div class="thumbnail left">
+      <img src="http://pcaat.edu.ph/assets/images/img-1207-886x665.jpeg" alt="">
+    </div>
+    <h2>MISSION</h2>
+    <p>
+      PCAAT’s mission is to provide learning experiences that are centered on development of an individual into a highly skilled professional exemplifying the values of integrity and perseverance characterized by leading through service, emboldened with a passion for innovation and inspired by compassion for others and for the environment.
+    </p>
+<hr>
+    <div class="thumbnail right">
+      <img src="http://pcaat.edu.ph/assets/images/img-1195-886x665.jpeg" alt="">
+    </div>
+    <h1>PHILOSOPHY</h1>
+    <p>
+      The school’s philosophy is rooted in the recognition that everyone experiences struggles which maybe obstacles to their growth and to the achievement of their goals. There is then an overall purpose for education to be a stepping stone for the individual to rise victoriously, from the challenges they face and in so doing, to others achieve the same. The school seeks to meet the increasing demands of a changing knowledge society, seeing beyond quantitative measurement of success to the core abilities that help students or graduates live healthy productive lives.  
+    </p>
+<hr>
 
+<div class="thumbnail left">
+  <img src="http://pcaat.edu.ph/assets/images/163300594-1431030940581336-544922822995155656-n-886x665.jpeg" alt="">
+</div>
+<h2>CORE VALUES</h2>
+<p>
+  A PCAAT graduate is highly skilled professional that embodies PERSEVERANCE and INTEGRITY, drives to EXCELLENCE, motivates by COMPASSION and leads through SERVICE.
+</p>
+  </div>
+  <!--Featured end-->
+<!--About end-->
+<hr>
   <!--Footer start-->
   <footer>
     <div class="footercontainer">
+
+    <div class="pcaatlogo">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="">
+                    <a href="#" class="">
+                        <img src="images/logo.png" alt="PCAAT- HOME OF THE SOARING PHOENIX">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
       <div class="footerNav">
         <ul>
@@ -217,13 +389,12 @@
           <li><a href="">Contact Us</a></li>
         </ul>
       </div>
-        
+
       <div class="socialIcons">
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-google-plus"></i></a>
-        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.facebook.com/pcaat.edu.ph"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/Pcaat2021/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/pcaat2021"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.youtube.com/@advancedpcaat3955"><i class="fa-brands fa-youtube"></i></a>
       </div>
 
     </div>

@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+$bg-pattern: url(https://res.cloudinary.com/dxayftnxb/image/upload/v1579716182/bg-pattern-desktop_j3tu8h.svg);
+$hero-desktop: url(https://res.cloudinary.com/dxayftnxb/image/upload/v1579716447/hero-desktop_ce8lgg.jpg);
+$hero-mobile: url(https://res.cloudinary.com/dxayftnxb/image/upload/v1579716164/hero-mobile_nqwbhx.jpg);
+$light-gradient: linear-gradient(135deg,
+  hsl(0, 100%, 98%), hsl(0, 0%, 100%));
+$heavy-gradient:linear-gradient(135deg,
+  hsl(0, 80%, 86%),
+  hsl(0, 74%, 74%));
+$desaturated-red: hsl(0, 36%, 70%);
+$dark-grayish-red: hsl(0, 6%, 24%);
+$soft-red: hsl(0, 93%, 68%);
+
+
+@mixin mainFont($weight, $size) {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $dark-grayish-red;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.main-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas:
+    'header hero'
+    'main   hero'
+    'main   hero'
+    'footer hero';
+
+  header {
+    grid-area: header;
+    display: grid;
+    align-items: center;
+    height: 15rem;
+    padding: 0 15rem;
+  }
+
+  .hero {
+    grid-area: hero;
+    background-image: url("http://pcaat.edu.ph/assets/images/171487325-824134984873520-6014975624572565721-n-696x522.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  main {
+    grid-area: main;
+    padding: 0 15rem;
+    max-width: 100rem;
+    @include mainFont(400, 0.5rem);
+
+    .container-text-heading {
+      h1 {
+        text-transform: uppercase;
+        font-size: 5rem;
+        letter-spacing: 1rem;
+        line-height: 1;
+
+        .text-heading-highlight {
+          font-weight: 300;
+          color: $desaturated-red;
+        }
+      }
+    }
+
+    .container-text-content {
+      padding: 2rem 0;
+
+      p {
+        color: $desaturated-red;
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
+    }
+
+    .form-container {
+      form {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        input {
+          width: 100%;
+          padding: 1.3rem;
+          border: 1px solid $desaturated-red;
+          border-radius: 2rem;
+          font-size: 1rem;
+          font-weight: 300;
+
+          &::placeholder {
+            color: #EFDBDD;
+            font-size: 1rem;
+            font-weight: 400;
+          }
+        }
+
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 7.5rem;
+          height: 3.75rem;
+          border: none;
+          border-radius: 2rem;
+          background: $heavy-gradient;
+          box-shadow: 0px 3px 3px $soft-red;
+          transition: box-shadow 0.5s;
+          position: absolute;
+          right: 0;
+
+          &:hover {
+            box-shadow: 0px 3px 3px $dark-grayish-red;
+            cursor: pointer;
+          }
+        }
+
+        .email-error-icon {
+          position: absolute;
+          right: 10rem;
+        }
+
+        .email-error-border {
+          border: 1px solid $soft-red;
+        }
+      }
+
+      .email-error-text p {
+        padding: 1rem 0 0 1.5rem;
+        @include mainFont(400, 1rem);
+        color: $soft-red;
+      }
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+  }
+
+  footer {
+    grid-area: footer;
+    padding: 0 15rem;
+    font-size: 1rem;
+    text-align: center;
+
+    a {
+      color: $desaturated-red;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    background: $light-gradient;
+  }
+
+  .main-container {
+    grid-template-columns: 2fr;
+    grid-template-rows: 5rem 30rem auto auto;
+    grid-template-areas: 'header'
+      'hero'
+      'main'
+      'footer';
+
+    header {
+      grid-area: header;
+      height: unset;
+      padding: 0 0 0 2rem;
+    }
+
+    .hero {
+      grid-area: hero;
+      background-image: url("http://pcaat.edu.ph/assets/images/171487325-824134984873520-6014975624572565721-n-696x522.jpg");
+    }
+
+    main {
+      grid-area: main;
+      padding: 0;
+      text-align: center;
+      @include mainFont(400, 1rem);
+
+      .container-text-heading {
+        padding: 6rem 4rem 3rem 2rem;
+
+        h1 {
+          font-size: 3rem;
+        }
+      }
+
+      .container-text-content {
+        padding-right: 2rem;
+        padding-left: 2rem;
+      }
+
+      .form-container {
+        padding: 0 2rem 0 2rem;
+
+        form {
+          input {
+            padding: 0.8rem;
+          }
+
+          button {
+            width: 4rem;
+            height: 2.75rem;
+          }
+        }
+      }
+    }
+
+    footer {
+      margin: 0;
+      padding: 2rem 4rem;
+      grid-area: footer;
+    }
+  }
+}
+
+.videocon {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.card {
+    border-radius:0;
+    margin:10px auto;
+}
+.card-title {
+	text-transform: uppercase;
+	color: #E44424;
+}
+
+.card-text {
+	margin-top:10px;
+	margin-bottom: 10px;
+	background-color:#FFFFFF;
+	color:#000000;
+}
+a.btn, a.btn:visited {
+    color:#333333;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}

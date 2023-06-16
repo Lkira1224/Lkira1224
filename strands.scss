@@ -2,120 +2,32 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: 'Montserrat', sans-serif;
 }
 html,body{
-   min-height: 100vh;
    width: 100%;
    height: 100%;
    margin: 0;
    padding: 0;
    overflow-x: hidden;
 }
- .container-fluid img{
-   margin-left: 100px;
- }
- .container-fluid h1{
-   margin-right: 300px;
-   font-size: 20px;
-   color: blue;
-   text-transform: uppercase;
-   font-weight: bold;
- }
- .container p i {
-   text-align: center;
-   color: blue;
-   font-weight: bold;
-   margin-left: 400px;
- }
- .container h1 p{
-   font-family: 'Times New Roman', Times, serif;
- }
- h5{
-   background-color: blue;
-   padding: 10px;
-   text-align: center;
-   font-size: 50px;
-   color: white;
- }
- .card-body p {
-   text-align: center;
-   font-weight: bold;
- }
- .datu {
-   margin: 20px auto;
-   width: 75%;
- }
- .datu h1 i{
-   color: blue;
-   font-size: 50px;
-   text-align: center;
- }
- .container img{
-   max-width: 350px;
-   float: left;
-   border-radius: 10px;
-   border: 3px solid white;
-   margin-right: 20px;
- }
-
 .container-fluid img {
    border-radius: 50%;
  }
- .container h1 {
-   text-align: right;
-   font-weight: bold;
-   color: black;
-   font-family: 'Times New Roman', Times, serif;
+ .navbar-custom {
+   height: 100px;
  }
- .container h2{
-   text-align: left;
-   font-weight: bold;
-   color: black;
-   font-family: 'Times New Roman', Times, serif;
- }
- .container h3{
-   text-align: left;
-   font-weight: bold;
-   color: black;
-   font-size: 50px;
-   font-family: 'Times New Roman', Times, serif;
- }
-.my-container h1{
+h1{
    text-align: right;
-   font-weight: bold;
-   color: black;
 }
-.my-container h2{
+h2{
    text-align: left;
-   font-weight: bold;
-   color: black;
 }
-.my-container h3{
+h3{
    text-align: right;
-   font-weight: bold;
-   color: black;
 }
-.my-container h4{
+h4{
    text-align: left;
-   font-weight: bold;
-   color: black;
 }
-.cid-sF9GNtbjGU {
-   padding-top: 1rem;
-   padding-bottom: 0rem;
-   background-color: black;
-}
-section {
-   background-position: 50% 50%;
-   background-repeat: no-repeat;
-   background-size: cover;
-}
-section, .container, .container-fluid {
-   position: relative;
-   word-wrap: break-word;
-}
-
 .heading h1{
    text-align: center;
    font-size: 50px;
@@ -133,14 +45,14 @@ section, .container, .container-fluid {
 .navbar ul li a{
    text-decoration: none;
    font-weight: bold;
-   color: blue;
+   color: #fff;
    text-transform: uppercase;
 }
 .navbar ul li::after{
    content: '';
    height: 1px;
    width: 0;
-   background: blue;
+   background: #fff;
    position: absolute;
    left: 0;
    bottom: -2px;
@@ -160,22 +72,28 @@ section, .container, .container-fluid {
    text-align: center;
    color: #fff;
 }
-.carousel-inner {
-   height: 120vh;
+.dropdown-menu {
+   padding: 5px;
+    font-size: 5px;
+    background: black;
 }
+.dropdown-menu li a{
+   font-size: 40px;
+}
+
 .container{
    padding: 30px;
-   font-family:'Montserrat', sans-serif;
+   font-family: 'roboto';
    font-size: 16px;
    font-weight: 300;
    line-height: 24px;
-   background-color: antiquewhite;
+   filter: grayscale(100%);
 }
 .container-fluid ul li a{
    font-size: 19px;
 }
 .container:hover{
-   background-color: rgb(255, 255, 255);
+   background-color: rgb(212, 211, 202);
    filter: grayscale(0);
 }
 .container p{
@@ -187,12 +105,12 @@ section, .container, .container-fluid {
    font-size: 16px;
    font-weight: 300;
    line-height: 24px;
-   background-color: lightblue;
-   margin-left: 105px;
-   margin-right: 105px;
+   filter: grayscale(100%);
+   margin-left: 50px;
+   margin-right: 50px;
 }
 .my-container:hover{
-   background-color: rgb(255, 255, 255);
+   background-color: rgb(231, 152, 152);
    filter: grayscale(0);
 }
 .my-container:hover.my-container img{
@@ -210,10 +128,10 @@ section, .container, .container-fluid {
    text-align: justify;
 }
 .thumbnail{
-   width: 350px;
+   width: 450px;
    position: relative;
-   box-shadow: 0 0 5px rgba(243, 239, 239, 0.993);
-   background-color: black;
+   box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+   background-color: #fff;
    overflow: hidden;
    border-radius: 8px;
    margin-bottom: 10px;
@@ -225,14 +143,14 @@ section, .container, .container-fluid {
    left: 0;
    width: 100%;
    height: 100%;
-   border: 8px solid lightgrey;
+   border: 8px solid #fff;
    z-index: 2;
    overflow: hidden;
    box-sizing: border-box;
 }
 .thumbnail img{
    width: 100%;
-   height: 150px;
+   height: auto;
    border-radius: 8px;
    transform: scale(1) rotate(0deg);
    transition: all .5 linear;
@@ -263,7 +181,7 @@ section, .container, .container-fluid {
 }
 
 footer{
-   background-color: darkgrey;
+   background-color: #111;
 }
 .footerContainer{
    width: 100%;
@@ -281,7 +199,7 @@ footer{
    border-radius: 50%;
 }
 .socialIcons a i{
-   font-size: 1.5rem;
+   font-size: 2em;
    color: black;
    opacity: 0.9;
    
@@ -315,12 +233,12 @@ footer{
    opacity: 1;
 }
 .footerBottom{
-   background-color: grey;
+   background-color: #000;
    padding: 20px;
    text-align: center;
 }
 .footerBottom p{
-   color: black;
+   color: white;
 }
 .designer{
    opacity: 0.7;
@@ -357,27 +275,18 @@ footer{
 .container h3{
    text-align: center;
 }
-.social ul {
-   margin-left: 100px;
-   position: absolute; 
-   bottom: 70px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.carousel-inner .item:nth-child(1){
+   background: #f8f8f8;
 }
-.social ul li {
-   list-style: none;
+.carousel-inner .item:nth-child(2){
+   background: #f8f8f8;
 }
-.social ul li img {
-   width: 125px;
+.carousel-inner .item:nth-child(3){
+   background: #f8f8f8;
 }
-
-.card-block h6{
-   text-align: center;
-   color: blue;
-   font-weight: bold;
-   font-family: 'Times New Roman', Times, serif;
+.carousel-inner .item:nth-child(4){
+   background: #f8f8f8;
 }
-.card-block h6 p{
-   font-family: 'Times New Roman', Times, serif;
+.carousel-inner .item:nth-child(5){
+   background: #f8f8f8;
 }
